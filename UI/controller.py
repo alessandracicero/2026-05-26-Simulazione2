@@ -9,7 +9,9 @@ class Controller:
         self._model = model
 
     def fillDDsRating(self):
-        pass
+        votiDD= self._model.getAllVoti()
+        self._view._ddrating1.options=votiDD
+        self._view._ddrating2.options=votiDD
 
     def handleCreaGrafo(self, e):
         pass
